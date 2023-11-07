@@ -26,6 +26,7 @@
 
 html {
   font-size: 62.5%; /*10px= 1rem*/
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Inter", sans-serif;
@@ -41,6 +42,23 @@ body {
   margin-top: 8rem;
 }
 /* common style */
+.container {
+  max-width: 120rem;
+  padding: 5rem;
+  margin: 0 auto; /* this margin is conected --[C-203]*/
+}
+.section__margin {
+  margin: 16rem auto; /* section margin --[C-203]*/
+}
+.section__title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 8rem;
+}
+.section__title > small {
+  color: var(--color-gray);
+}
 .btn {
   padding: 1.5rem 3rem;
 }
@@ -181,4 +199,97 @@ button {
 }
 .hero__right > img {
   width: 50%;
+}
+/* about style */
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 8rem;
+}
+.about__left {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+/* about__left__typo */
+.about__left__typo {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.about__left__typo > div {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.about__left__typo > div span {
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-gray);
+}
+.about__left__typo > div h1 {
+  font-size: 12rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* about__left__founder */
+.about__left__founder {
+  display: flex;
+  align-items: end;
+  gap: 2.5rem;
+}
+.about__left__founder > img {
+  width: 30%;
+}
+.about__left__founder > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.about__left__founder > div p {
+  opacity: 75%;
+}
+/* about__right */
+.about__right {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: start;
+}
+.about__right > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.about__right > div p {
+  opacity: 75%;
+}
+/* designs item */
+.designs__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.designs__wrapper__shutter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-blue);
+  z-index: -2;
+}
+.designs__item {
+  display: grid;
+  grid-template-columns: 4rem auto 16rem;
+  border-bottom: var(--border-regular);
+  padding: 4rem 8rem;
+  align-items: center;
+  cursor: pointer;
+}
+.designs__item:not(:last-child) {
+  border-bottom: var(--border-regular);
 }
