@@ -196,6 +196,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .hero__right > img {
   width: 50%;
@@ -440,3 +441,127 @@ button {
   filter: grayscale(0) brightness(1);
   cursor: pointer;
 }
+/* testimonials section */
+
+.testimonials__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+.testimonials__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: var(--color-white);
+  box-shadow: 0.125rem 0.125rem 5rem rgba(227, 224, 222, 0.5);
+  border-radius: 10px;
+  padding: 5rem;
+  transition: all 0.5s ease-in-out;
+}
+.testimonials__item:hover {
+  transform: translateY(-1rem);
+}
+.testimonials__item > p {
+  opacity: 75%;
+}
+.testimonials__item__client {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.testimonials__item__client__img {
+  height: 5rem;
+  width: 5rem;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.testimonials__item__client__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonials__item__client > div:last-child > p:first-child {
+  font-weight: 500;
+}
+.testimonials__item__client > div:last-child > p:last-child {
+  opacity: 75%;
+  margin-top: 2.5px;
+}
+/* contact section */
+.contact__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+}
+.contact__left {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.contact__left > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* contact right */
+.contact__right {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: start;
+}
+.form__control {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.form__control > label {
+  cursor: pointer;
+}
+.form__control > input,
+.form__control > textarea {
+  width: 100%;
+  padding: 2.5rem;
+  border: var(--border-regular);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  transition: all 0.3s ease-in-out;
+}
+.form__control > textarea {
+  resize: none;
+}
+.form__control > input::placeholder,
+.form__control > textarea::placeholder {
+  color: var(--color-gray);
+}
+.form__control > input:focus,
+.form__control > textarea:focus {
+  border-color: var(--color-blue);
+}
+/* footer style */
+.footer {
+  background-color: var(--color-gray);
+  padding: 16rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5rem;
+  opacity: 75%;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.footer__item:first-child > p {
+  margin-top: 1.5rem;
+}
+.footer__item:not(:first-child) > p {
+  font-weight: 600;
+}
+.footer__item:not(:first-child) {
+  gap: 1.5rem;
+}
+
+/* AT LAST PROJECT DONE🥹 */

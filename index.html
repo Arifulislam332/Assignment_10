@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="CSS/media_quary.css">
     <link rel="stylesheet" href="./CSS/main.css" />
     <link
       rel="shortcut icon"
       href="./assets/icons/favicon.png"
       type="image/x-icon"
     />
-    <title>Aristocart Interiors</title>
+    <title>Aristocrat Interiors</title>
   </head>
   <body>
     <!-- header -->
@@ -19,7 +20,7 @@
       <nav class="navber">
         <!-- logo -->
         <a href="#" class="navber__logo"
-          >Aristocart<span class="navber__logo__span">.</span></a
+          >Aristocrat<span class="navber__logo__span">.</span></a
         >
         <!-- navber links -->
         <ul class="navber__links">
@@ -404,7 +405,7 @@
         </div>
       </section>
       <!-- Gallery section -->
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="gallery__container">
           <div class="gallery__item">
             <img src="./assets/images/gallery-1.jpg" alt="" />
@@ -426,7 +427,215 @@
           </div>
         </div>
       </section>
+      <!-- testimonials sectioin -->
+      <section class="testimonials container section__margin" id="testimonials">
+        <!-- section title-->
+        <div class="section__title">
+          <small>Testimonials</small>
+          <h2>Voices from our clients</h2>
+        </div>
+        <!-- testimonials wrapper -->
+        <div class="testimonials__wrapper">
+          <!-- testimonials 1 -->
+          <div class="testimonials__item">
+            <p>
+              &ldquo;I recently hired Aristocrat Interiors to transform my
+              living space, and I couldn't be happier with the results. Their
+              team of designers, led by John, completely exceeded my
+              expectations. They turned my vision into reality, creating a
+              stunning and functional living room. I'm so grateful for their
+              expertise and attention to detail.&ldquo;
+            </p>
+            <div class="testimonials__item__client">
+              <div class="testimonials__item__client__img">
+                <img src="./assets/images/person-1.jpg" alt="Person 1" />
+              </div>
+              <div>
+                <p>Sarah Johnson</p>
+                <p>Homeowner</p>
+              </div>
+            </div>
+          </div>
+          <!-- testimonials 2 -->
+          <div class="testimonials__item">
+            <p>
+              &ldquo;As a restaurant owner, I needed a professional touch for
+              the interior design of my establishment. Aristocrat Interiors did
+              a fantastic job. Maria and her team worked tirelessly to ensure
+              every corner of my restaurant was inviting and unique. The
+              ambiance they created has significantly enhanced the dining
+              experience for my customers. &ldquo;
+            </p>
+            <div class="testimonials__item__client">
+              <div class="testimonials__item__client__img">
+                <img src="./assets/images/person-2.jpg" alt="Person 1" />
+              </div>
+              <div>
+                <p>David Martinez</p>
+                <p>Business Owner</p>
+              </div>
+            </div>
+          </div>
+          <!-- testimonials 3 -->
+          <div class="testimonials__item">
+            <p>
+              &ldquo;I often recommend Aristocrat Interiors to my clients
+              looking to stage their homes for sale. Their expert staging team,
+              under the guidance of Lisa, has a knack for making properties look
+              absolutely stunning. Many of my listings have sold faster and at
+              higher prices thanks to their impeccable interior design
+              skills.&ldquo;
+            </p>
+            <div class="testimonials__item__client">
+              <div class="testimonials__item__client__img">
+                <img src="./assets/images/person-3.jpg" alt="Person 1" />
+              </div>
+              <div>
+                <p>Emily Mitchell</p>
+                <p>Real Estate Agent</p>
+              </div>
+            </div>
+          </div>
+          <!-- testimonials 4 -->
+          <div class="testimonials__item">
+            <p>
+              &ldquo;Our hotel needed a fresh and modern look to attract more
+              guests. Aristocrat Interiors, with the guidance of their lead
+              designer Karen, provided us with a complete makeover that wowed
+              both staff and visitors. The transformation was incredible, and it
+              has significantly boosted our bookings.&ldquo;
+            </p>
+            <div class="testimonials__item__client">
+              <div class="testimonials__item__client__img">
+                <img src="./assets/images/person-4.jpg" alt="Person 1" />
+              </div>
+              <div>
+                <p>Mark Reynolds</p>
+                <p>Hotel Manager</p>
+              </div>
+            </div>
+          </div>
+          <!-- testimonials 5 -->
+          <div class="testimonials__item">
+            <p>
+              &ldquo;Aristocrat Interiors took our plain and uninspiring office
+              space and turned it into a vibrant and motivating workspace. Their
+              team, led by Michael, paid attention to every detail and created a
+              perfect balance between aesthetics and functionality. Our
+              employees now love coming to work in this beautiful
+              environment.&ldquo;
+            </p>
+            <div class="testimonials__item__client">
+              <div class="testimonials__item__client__img">
+                <img src="./assets/images/person-5.jpg" alt="Person 1" />
+              </div>
+              <div>
+                <p>Rachel Taylor</p>
+                <p>Office Manager</p>
+              </div>
+            </div>
+          </div>
+          <!-- testimonials 6 -->
+          <div class="testimonials__item">
+            <p>
+              &ldquo;Aristocrat Interiors helped us create a soothing and
+              comforting atmosphere for our healthcare facility. Lisa and her
+              team focused on making our patients feel at ease while maintaining
+              a professional and sterile environment. Their expertise in
+              healthcare interior design is truly commendable.&ldquo;
+            </p>
+            <div class="testimonials__item__client">
+              <div class="testimonials__item__client__img">
+                <img src="./assets/images/person-6.jpg" alt="Person 1" />
+              </div>
+              <div>
+                <p>Daniel Adams</p>
+                <p>Healthcare Facility Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact section -->
+      <section class="contact container section__margin" id="contact">
+        <div class="section__title">
+          <small>Contact</small>
+          <h2>Let's build your dream space</h2>
+        </div>
+        <!-- contact container -->
+        <div class="contact__wrapper">
+          <!-- contact left -->
+          <div class="contact__left">
+            <img src="./assets/images/contact.jpg" alt="Contact photo" />
+          </div>
+          <!-- contact right -->
+          <form class="contact__right">
+            <!-- name -->
+            <div class="form__control">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" placeholder="Sarah" />
+            </div>
+            <div class="form__control">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" placeholder="Parker" />
+            </div>
+            <!-- email -->
+            <div class="form__control">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="hellow@gmail.com" />
+            </div>
+            <!-- message -->
+            <div class="form__control">
+              <label for="message">Message</label>
+              <textarea
+                name=""
+                id="message"
+                rows="7"
+                placeholder="Write your message..."
+              ></textarea>
+            </div>
+            <!-- submite btn -->
+            <button type="submit" class="btn btn__primary">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <!-- footre -->
+    <footer class="footer">
+      <div class="footer__item">
+        <a href="#" class="navber__logo">Aristocrat<span class="navber__logo__span">.</span></a>
+        <p>&copy; 2023, Aristocrat Interiors.All rights reserved</p>
+      </div>
+      <div class="footer__item">
+        <p>Navigation</p>
+        <a href="#" class="navber__link__item">Home</a>
+        <a href="#about" class="navber__link__item">About</a>
+        <a href="#designs" class="navber__link__item">Designs</a>
+        <a href="#gallery" class="navber__link__item">Gallery</a>
+        <a href="#testimonials" class="navber__link__item">Testimonials</a>
+        <a href="#contact" class="navber__link__item">Contact</a>
+      </div>
+      <div class="footer__item">
+        <p>Company</p>
+        <a href="#" class="navber__link__item">Blogs</a>
+        <a href="#" class="navber__link__item">Vision</a>
+        <a href="#" class="navber__link__item">Career</a>
+        <a href="#" class="navber__link__item">Help Center</a>
+      </div>
+      <div class="footer__item">
+        <p>Terms and Conditions</p>
+        <a href="#" class="navber__link__item">Privacy Policy</a>
+        <a href="#" class="navber__link__item">Agreements</a>
+        <a href="#" class="navber__link__item">Legal otices</a>
+        <a href="#" class="navber__link__item">Emergency Query</a>
+      </div>
+      <div class="footer__item">
+        <p>Address</p>
+        <a href="#"> 123,Main Street,New York,NY</a>
+        <a href="#">+024 243 234</a>
+        <a href="mailto:support@aristocrat.com">Email: support@aristocrat.com</a>
+      </div>
+    </section>
+    </footer>
   </body>
 </html>
